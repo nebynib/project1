@@ -1,0 +1,18 @@
+@media (max-width 640px) {
+    body {
+        background-color:rgb(255, 194, 194);
+    }
+    h1 {
+        font-size:large
+    }
+}
+@media (min-width 640px) and (max-width: 480px) {
+    body {
+        background-color:pink;
+    }
+}
+@media (min-width 1600px) and (max-width: 1200px) {
+    body {
+        background-color:bisque;
+    }
+}
