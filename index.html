@@ -4,22 +4,43 @@
             Ross's Welcome Page
         </title>
     </head>
+    <link rel-"stylesheet" href="style1.css">
+    <style>
+        h1{
+            background-color:palevioletred;
+            text-align:center;
+            color:black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
     <body>
         <form action ="https://nebynib.github.io/project1/" method=POST>
-            <div> 
-                <input type="text" placeholder="Type your name" name="username_field">
+                <div>
+                    <input type="text" placeholder="Type your name" name="username_field">
+                </div>
+                <div>
+                    <label for ="gender_group"> Gender:</label>
+                    <intput name="gender_group" type="radio" value="male"> Male
+                    <input name="gender_group" type="radio" value="female"> Female
+                </div>
+            <div>
                 <input type="submit" value="submit">
+            </div>
         </form>
+
+        <div id="info">
         <span>
         <h1> Hi! Welcome to my webpage :) </h1>
-        <h2> Things to know about me:</h2>
+        <h2 style=> Things to know about me:</h2>
         <ul>
             <li>My name is Ross</li>
             <li>I was born in Philippines, raised in DC</li>
             <li>I'm a computer science major</li>
         </ul>
-        <img src="IMG_9474.jpg" alt="headshot" width ="10%" >
-        </span>
+        <img id="shadow" src="IMG_9474.jpg" alt="headshot" width ="10%" >
+    </span>
+    </div>
+        <div class="boxtable" id="info">
         <table>
             <tr>
                 <th>Education </th>
@@ -34,8 +55,8 @@
                 <td>Anesthesia technician </td>
             </tr>
             <hr>
-            <h2> Programming skills </h2>
-            <ul>
+            <h2 style="font-family:Arial, Helvetica, sans-serif; background-color:palevioletred"> Programming skills </h2>
+            <ul style="font-size:medium">
                 <li>Java</li>
                     <ul>
                         <li>intermediate</li>
@@ -50,24 +71,27 @@
                 </ul>
             </ul>
         </table>
+    </div>
         <hr>
-        <h2> Favorites and hobbies </h2> 
+        <div id="box1">
+        <h2 style="text-align:center; background-color:palevioletred" > Favorites: </h2> 
         <p>My hobbies currently include crocheting, competitive weightlifting, playing videogames and working with my club!</p>
         <div id="video_anchor">
-            <h2>This is my current favorites</h2>
+            <h3>These are my current favorite song, movie, and show</h3>
             <p>Song</p>
-            <iframe width="1904" height="768" src="https://www.youtube.com/embed/fIrSkilUvHw" title="LUCKI - Super Urus (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="shadow" width="889" height="509" src="https://www.youtube.com/embed/fIrSkilUvHw" title="LUCKI - Super Urus (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Movie</p>
-            <iframe width="889" height="509" src="https://www.youtube.com/embed/ByXuk9QqQkk" title="Spirited Away - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+            <iframe id="shadow" width="889" height="509" src="https://www.youtube.com/embed/ByXuk9QqQkk" title="Spirited Away - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
             <p>Show</p>
-            <iframe width="889" height="509" src="https://www.youtube.com/embed/2G42xjBjdck" title="Made in Abyss season 2 - Official Trailer 2 | AniTV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="shadow" width="889" height="509" src="https://www.youtube.com/embed/2G42xjBjdck" title="Made in Abyss season 2 - Official Trailer 2 | AniTV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <hr>
+        <div>
         <p>Here's some more information about my favorite show! </p>
         <ul>
             <li><a href ="https://myanimelist.net/anime/34599/Made_in_Abyss" target="_blank"> Goes to it's first season's information</a></li>
             <li><a href ="https://myanimelist.net/anime/37779/Yakusoku_no_Neverland" target="_blank"> If you liked that show I also reccomend this one!</a></li>
         </ul>
-        
+    </div>    
     </body>
 </html>
